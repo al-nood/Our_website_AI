@@ -1,0 +1,186 @@
+/* -------------------------------------- */
+/* 1. Global / Body and Fonts */
+/* -------------------------------------- */
+
+body {
+    
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    background-color: #f4f6f9; 
+     min-height: 100vh;
+     overflow-y: auto;
+  }
+
+
+
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+height: auto;
+  min-height: 100vh;
+  overflow: auto;
+  
+   
+}
+/* -------------------------------------- */
+/* 2. Sidebar Customization (Flex-Column) */
+/* -------------------------------------- */
+
+.flex-column.flex-shrink-0 {
+    
+    background-color: #212529 !important; 
+    color: #f8f9fa; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+}
+.container {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.title {
+    
+    
+    margin-left: 0.5rem;
+}
+
+
+/* Sidebar Links (nav-link) */
+.nav-pills .nav-link {
+    transition: background-color 0.2s, color 0.2s;
+    border-radius: 0; 
+    padding: 0.75rem 1rem;
+    color: #adb5bd !important; 
+}
+
+/* Hover effect */
+.nav-pills .nav-link:hover:not(.active) {
+    background-color: #343a40; 
+    color: #ffffff !important;
+}
+.card-body {
+    max-height: 80vh; /* 80% من ارتفاع الشاشة */
+    overflow-y: auto; /* إضافة شريط تمرير عمودي */
+    padding-right: 10px; /* مساحة للشريط */
+}
+
+/* Active Link */
+.nav-pills .nav-link.active {
+    background-color: #4680ff !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    border-left: 5px solid #f4f6f9; 
+}
+
+.submenu-link {
+  padding-left: 2.5rem !important; /* Indent sub-links */
+  font-size: 0.9rem;        
+   }
+
+.page-container {
+       height: auto;
+  min-height: 100vh;
+      }
+      /* -------------------------------------- */
+/* 3. Main Content Area (Card/Form) */
+/* -------------------------------------- */
+
+/* Card Styling */
+.card {
+    border: none; /* إزالة الحدود الافتراضية */
+    border-radius: 10px; /* حواف مستديرة أكثر */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* ظل أنظف */
+}
+
+/* Card Header (Optional, if you add one) */
+.card-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e9ecef;
+    font-weight: 600;
+    color: #343a40;
+}
+
+/* Form Controls */
+
+.form-control {
+    border-radius: 5px;
+    border-color: #ced4da;
+    margin-top: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+}
+::placeholder {
+  font-size: 0.9rem;
+  color: #a8a8a8; 
+  font-style: italic;
+  opacity: 1; 
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #0d6efd !important; 
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #2649e7 !important;
+   
+}
+.btn{ 
+   width:100px
+}
+
+/* -------------------------------------- */
+/* 4. Profile Dropdown */
+/* -------------------------------------- */
+.dropdown-toggle{
+   font-size: 0.9rem; 
+}
+.dropdown-menu-dark {
+  
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.dropdown-item{
+padding-left: 2.5rem !important; /* Indent sub-links */
+  font-size: 0.9rem; 
+
+}
+.dropdown-divider {
+    border-top-color: rgba(255, 255, 255, 0.15);
+}
+  
+/* -------------------------------------- */
+/* 5. Table */
+/* -------------------------------------- */
+.table{
+    border-radius: 10px; /* حواف مستديرة أكثر */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* ظل أنظف */
+}
+.table thead th {
+    background-color: #0d6efd; 
+    color: white;
+    padding: 13px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.table tr td { 
+    text-transform: capitalize;
+   font-size: 0.9rem; 
+}
+.table tr td:has(img) { 
+  
+ text-align: center;      /* Centers horizontally */
+  vertical-align: middle;  /* Centers vertically */
+}
+.table tr td img { 
+   width:50px;
+   height: 50px;
+   border-radius: 10%;
+  border: #e4e4e4 2px  solid;
+  box-sizing: content-box;
+}

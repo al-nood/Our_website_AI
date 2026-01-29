@@ -1,0 +1,122 @@
+/* ===== Page Layout ===== */
+.admin-wrapper{
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px;
+}
+
+/* ===== Card ===== */
+.admin-card{
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    padding: 25px;
+}
+
+/* ===== Header ===== */
+.admin-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.admin-title{
+    font-size:22px;
+    font-weight:700;
+    color:#333;
+}
+
+/* ===== Add Button ===== */
+.btn-add{
+    background:#090157;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.2s;
+}
+
+.btn-add:hover{
+    background:#82a1da;
+    transform:translateY(-2px);
+}
+
+/* ===== Table ===== */
+.admin-table{
+    width:100%;
+    border-collapse: collapse;
+    overflow:hidden;
+}
+
+.admin-table thead{
+    background:#f3f4f6;
+}
+
+.admin-table th{
+    padding:14px;
+    text-align:left;
+    font-weight:600;
+    color:#555;
+}
+
+.admin-table td{
+    padding:14px;
+    border-top:1px solid #eee;
+}
+
+.admin-table tbody tr{
+    transition:.2s;
+}
+
+.admin-table tbody tr:hover{
+    background:#f9fafb;
+}
+
+/* ===== Role badges ===== */
+.badge-role{
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.role-admin{
+    background:#dbeafe;
+    color:#1d4ed8;
+}
+
+.role-super{
+    background:#fde68a;
+    color:#92400e;
+}
+
+/* ===== Action buttons ===== */
+.btn-action{
+    padding:6px 12px;
+    border-radius:6px;
+    font-size:13px;
+    text-decoration:none;
+    margin-right:6px;
+}
+
+.btn-edit{
+    background:#3b82f6;
+    color:white;
+}
+
+.btn-delete{
+    background:#ef4444;
+    color:white;
+}
+
+.btn-edit:hover{ background:#2563eb; }
+.btn-delete:hover{ background:#dc2626; }
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+    .admin-table{
+        font-size:13px;
+    }
+}
